@@ -1,0 +1,86 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#error {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #d81010cf;
+    margin-top: 50px;
+    font-family: monospace;
+    display: none;
+}
+
+form {
+    margin-top: 4rem;
+}
+
+#error.show {
+    display: block;
+}
+
+#container {
+    display: none;
+}
+
+#container.show {
+    display: block;
+}
+
+
+/* Add these styles for the connection status */
+
+#connection-status {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+#connection-status.online {
+    background-color: #4CAF50;
+}
+
+#connection-status.offline {
+    background-color: #f44336;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
